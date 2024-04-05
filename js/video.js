@@ -22,6 +22,8 @@ slider.oninput = function() {
 document.getElementById("play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
+	volume.innerHTML = `${slider.value}%`; // Display new slider value
+	video.volume = slider.value / 100; // Divide by 100 to get between 0 and 1.0
 });
 
 // Pause Video
