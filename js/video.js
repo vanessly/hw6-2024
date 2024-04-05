@@ -9,7 +9,6 @@ window.addEventListener("load", function() {
 	console.log(video);
 	video.loop = false; // Turn off loop
 	video.autoplay = false; // Turn off autoplay
-	volume.innerHTML = `${slider.value}%`;  // Display default slider value
 });
 
 // Volume Slider
