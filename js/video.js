@@ -9,12 +9,12 @@ window.addEventListener("load", function() {
 	console.log(video);
 	video.loop = false; // Turn off loop
 	video.autoplay = false; // Turn off autoplay
-	volume.innerHTML = slider.value;  // Display default slider value
+	volume.innerHTML = `${slider.value}%`;  // Display default slider value
 });
 
 // Volume Slider
 slider.oninput = function() {
-	volume.innerHTML = this.value; // Display new slider value
+	volume.innerHTML = `${this.value}%`; // Display new slider value
 	video.volume = this.value / 100; // Divide by 100 to get between 0 and 1.0
 }
 
